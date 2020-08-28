@@ -1,0 +1,27 @@
+:host {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template: 
+  "left content right";
+  grid-template-columns: min-content 1fr min-content;
+  height: 100vh;
+}
+
+.left-side {
+  grid-area: left;
+  background: red;
+  width: 10em;
+  cursor: pointer;
+}
+
+.content {
+  grid-area: content;
+  background: blue;
+}
+
+.right-side {
+  grid-area: right;
+  background: green;
+  width: 15em;
+  cursor: pointer;
+}
